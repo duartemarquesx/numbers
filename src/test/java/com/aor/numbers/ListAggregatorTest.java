@@ -11,7 +11,7 @@ public class ListAggregatorTest {
     private List<Integer> list;
     @BeforeEach
     public void setUp() {
-        list = Arrays.asList(1,2,4,2,5);
+        list = Arrays.asList(-1,-4,-5);
     }
 
     @Test
@@ -29,7 +29,7 @@ public class ListAggregatorTest {
         ListAggregator aggregator = new ListAggregator();
         int max = aggregator.max(list);
 
-        Assertions.assertEquals(5, max);
+        Assertions.assertEquals(-1, max);
     }
 
     @Test

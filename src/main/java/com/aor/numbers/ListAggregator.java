@@ -25,12 +25,10 @@ public class ListAggregator {
      * @return The maximum value in the list.
      */
     public Integer max(List<Integer> list) {
-        int max = 0;
-
+        int max = Integer.MIN_VALUE;
         for (Integer number : list)
             if (number > max)
                 max = number;
-
         return max;
     }
 
@@ -38,6 +36,7 @@ public class ListAggregator {
      * Calculates the minimum value in a list.
      * @return The minimum value in the list.
      */
+
     public Integer min(List<Integer> list) {
         int min = Integer.MAX_VALUE;
 
